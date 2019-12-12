@@ -1,59 +1,45 @@
 {
-	"name": "react-redirector",
-	"version": "0.0.0",
-	"description": "Redirect to a URL using React",
-	"license": "MIT",
-	"repository": "abranhe/react-redirector",
-	"author": {
-		"name": "Abraham Hernandez",
-		"email": "abraham@abranhe.com",
-		"url": "abranhe.com"
-	},
-	"bugs": {
-		"url": "https://github.com/abranhe/react-redirector/issues"
-	},
-	"main": "lib/index.js",
-	"homepage": "https://p.abranhe.com/react-redirector",
-	"scripts": {
-		"build": "node scripts/build.js",
-		"clean": "rimraf lib",
-		"prepare": "npm test && npm run clean && npm run build"
-	},
-	"files": [
-		"/lib",
-		"readme.md",
-		"license"
-	],
-	"keywords": [
+  "name": "react-redirector",
+  "version": "0.0.1-beta",
+  "description": "Redirect to a URL using React",
+  "license": "MIT",
+  "repository": "abranhe/react-redirector",
+  "author": {
+    "name": "Abraham Hernandez",
+    "email": "abraham@abranhe.com",
+    "url": "https://abranhe.com"
+  },
+  "bugs": {
+    "url": "https://github.com/abranhe/react-redirector/issues"
+  },
+  "main": "lib/index.js",
+  "homepage": "https://p.abranhe.com/react-redirector",
+  "scripts": {
+    "test": "xo"
+  },
+  "files": [ "index.js" ],
+  "keywords": [
     "url",
     "url-redirect",
-	"redirector",
-	"redirect",
-	"react",
-	"react-redirector"
-	],
-	"devDependencies": {
-		"babel-cli": "^6.18.0",
-		"babel-core": "^6.21.0",
-		"babel-plugin-add-module-exports": "^0.2.1",
-		"babel-plugin-transform-class-properties": "^6.24.1",
-		"babel-plugin-transform-object-rest-spread": "^6.26.0",
-		"babel-preset-env": "^1.6.0",
-		"babel-preset-react": "^6.16.0",
-		"babel-register": "^6.18.0",		
-		"chai": "^3.2.0",
-		"enzyme": "^2.7.0",
-		"gzip-size": "^4.1.0",
-		"isparta": "^4.0.0",
-		"jsdom": "^9.9.1",
-		"pretty-bytes": "^4.0.2",
-		"react": "^15.4.2",
-		"react-addons-test-utils": "^15.4.2",
-		"rimraf": "^2.4.3",
-		"rollup": "^0.56.2",
-		"rollup-plugin-babel": "^3.0.2",
-		"rollup-plugin-commonjs": "^8.3.0",
-		"rollup-plugin-node-resolve": "^3.0.3",
-		"rollup-plugin-uglify": "^3.0.0"
-	  }
+    "redirector",
+    "redirect",
+    "react",
+    "react-redirector"
+  ],
+  "peerDependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "eslint-config-xo-react": "^0.20.0",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^2.3.0"
+  },
+  "xo": {
+    "extends": "xo-react",
+    "rules": {
+      "no-undef": 0
+    }
+  }
 }

@@ -1,17 +1,16 @@
-import React, { Component } from "react";
+import React, {useEffect} from 'react';
+import PropTypes from 'prop-types';
 
-export default class Redirector extends Component {
-  
-    constructor(props) {
-    super();
-    this.state = {...props};
-  }
+function Redirector({to}) {
+	useEffect(() => {
+		window.location = to;
+	}, [to]);
 
-  componentWillMount() {
-    window.location = this.state.to;
-  }
-
-  render() {
-    return (<section>Redirecting...</section>);
-  }
+	return <></>;
 }
+
+Redirector.propTypes = {
+	to: PropTypes.string.isRequired
+};
+
+export default Redirector;

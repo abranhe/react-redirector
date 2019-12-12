@@ -28,17 +28,11 @@ $ npm install react-redirector
 ## Usage
 
 ```jsx
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import Redirector from 'react-redirector';
 
-class App extends Component {
-  render() {
-    return (
-        <Redirector to='https://abranhe.com'/>
-    );
-  }
-}
+const App = () => <Redirector to='https://abranhe.com'/>;
 
 ReactDOM.render(<App/>, document.getElementById('root'));
 ```
@@ -47,13 +41,11 @@ ReactDOM.render(<App/>, document.getElementById('root'));
 
 ### `<Redirector/>` 
 
-Redirect to a URL, extends `window.location`;
+Redirect to a URL, extends `window.location`.
 
-## Team
+### Props
 
-|[![Carlos Abraham Logo][abranhe-img]][abranhe]|
-| :-: |
-| [Carlos Abraham][abranhe] |
+`to`: Location to redirect the page.
 
 ## License
 
@@ -61,5 +53,4 @@ Redirect to a URL, extends `window.location`;
 
 <!-------------------- Links ------------------------>
 [abranhe]: https://github.com/abranhe
-[abranhe-img]: https://avatars3.githubusercontent.com/u/21347264?s=50
 [license]: https://github.com/abranhe/react-redirector/blob/master/license
