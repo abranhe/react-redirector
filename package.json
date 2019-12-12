@@ -1,6 +1,6 @@
 {
   "name": "react-redirector",
-  "version": "0.0.7-alpha",
+  "version": "0.0.7",
   "description": "Redirect to a URL using React",
   "license": "MIT",
   "repository": "abranhe/react-redirector",

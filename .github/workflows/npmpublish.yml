@@ -35,8 +35,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-          registry-url: https://npm.pkg.github.com/abranhe
+          registry-url: https://npm.pkg.github.com/
           scope: '@abranhe'
+      - run: echo registry=https://npm.pkg.github.com/abranhe >> .npmrc
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.PUBLISH_GITHUB_TOKEN}}
