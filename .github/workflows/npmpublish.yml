@@ -41,7 +41,7 @@ jobs:
           scope: '@abranhe'
       - name: Rename package to match GitHub repository
         run: |-
-          sed -i"" -E "s|\"name\": \".*\"|\"name\": \"@${GITHUB_REPOSITORY}\"|" package.json
+          sed -i"" -E "s|\"name\": \".*\"|\"name\": \"@abranhe/react-redirector\"|" package.json
       - run: npm config set registry https://npm.pkg.github.com/
       - run: npm publish --access public
         env:
