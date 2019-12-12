@@ -15,6 +15,7 @@ jobs:
       # - run: npm test
 
   publish-npm:
+    name: Publish to npm
     needs: build
     runs-on: ubuntu-latest
     steps:
@@ -28,6 +29,7 @@ jobs:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
   publish-gpr:
+    name: Publish to Github Pkgs
     needs: build
     runs-on: ubuntu-latest
     steps:
@@ -38,6 +40,6 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: '@abranhe'
       - run: echo registry=https://npm.pkg.github.com/abranhe >> .npmrc
-      - run: npm publish
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.PUBLISH_GITHUB_TOKEN}}
