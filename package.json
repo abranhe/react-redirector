@@ -1,11 +1,11 @@
 {
   "name": "react-redirector",
-  "version": "0.0.8-beta",
+  "version": "0.0.8-c",
   "description": "Redirect to a URL using React",
   "license": "MIT",
   "repository": "abranhe/react-redirector",
   "author": {
-    "name": "Abraham Hernandez",
+    "name": "Carlos Abraham",
     "email": "abraham@abranhe.com",
     "url": "https://abranhe.com"
   },
