@@ -1,20 +1,6 @@
-<p align="center">
-    <br>
-	<a href="https://npmjs.com/react-redirector">react-redirector</a>: Redirect to a URL using React
-	<br>
-</p>
+# react-redirector [![Build Status](https://github.com/abranhe/react-redirector/workflows/Publish/badge.svg)](https://github.com/abranhe/react-redirector/actions) [![](https://img.shields.io/npm/v/react-redirector.svg)](https://npmjs.com/package/react-redirector)
 
-<p align="center">
-	<a href="https://travis-ci.org/abranhe/react-redirector"><img src="https://img.shields.io/travis/abranhe/react-redirector.svg?logo=travis" /></a>
-	<a href="https://github.com/abranhe"><img src="https://abranhe.com/badge.svg"></a>
-	<a href="https://cash.me/$abranhe"><img src="https://cdn.abranhe.com/badges/cash-me.svg"></a>
-	<a href="https://patreon.com/abranhe"><img src="https://cdn.abranhe.com/badges/patreon.svg" /></a>
-	<a href="https://github.com/abranhe/react-redirector/blob/master/license"><img src="https://img.shields.io/github/license/abranhe/react-redirector.svg" /></a>
-  <a href="https://npmjs.com/package/react-redirector"><img src="https://img.shields.io/npm/v/react-redirector.svg"></a>
-  <br>
-  <br>
-</p>
-
+> Redirect to a URL using React
 
 ## Install
 
