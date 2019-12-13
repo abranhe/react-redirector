@@ -1,7 +1,4 @@
 <p align="center">
-	<br>
-	<a href="https://npmjs.com/package/react-redirector"><img src="https://cdn.abranhe.com/projects/react-redirector/logo.svg" width="250"></a>
-	<br>
     <br>
 	<a href="https://npmjs.com/react-redirector">react-redirector</a>: Redirect to a URL using React
 	<br>
